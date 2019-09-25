@@ -1,0 +1,63 @@
+Arrays are mutable collection that it holds elements of similar datatype
+ 
+1) HOW TO DEFINE ARRAY OF STRING DATA TYPE ?
+ 
+scala> var k = new Array[String](5)
+k: Array[String] = Array(null, null, null, null, null)
+ 
+or
+ 
+we can directly create an array something like this
+ 
+var name = Array("gfg", "geeks", "GeeksQuize", 
+                    "geeksforgeeks" )
+ 
+2) HOW TO ADD ELEMENTS TO AN ARRAY?
+ 
+scala> k(0)="hi"
+ 
+scala> k(1)="98"
+ 
+scala> k(2)="bye"
+ 
+scala> k(3)="hell"
+ 
+scala> k(4)="bell"
+ 
+3) Printing contents of array:
+ 
+scala> println(k(0),k(1),k(2),k(3),k(4))
+(hi,98,bye,hell,bell)
+ 
+4) CHANGING THE VALUE OF FIRST ELEMENT:
+ 
+scala> k(0)="ni"
+ 
+5) PRINTING TO CHECK WHETHER IT IS REFLECTED OR NOT :
+ 
+scala> println(k(0),k(1),k(2),k(3),k(4))
+(ni,98,bye,hell,bell)
+ 
+6) Using Arrays in for loop
+ 
+scala>  var days = Array("Sunday", "Monday", "Tuesday",
+     |                     "Wednesday", "Thursday", "Friday",
+     |                     "Saturday" )
+days: Array[String] = Array(Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday)
+ 
+For loop :
+ 
+scala> for ( m1 <- days )
+     |         {
+     |             println(m1 )
+     |         }
+ 
+Output:
+ 
+Sunday
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday

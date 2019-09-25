@@ -1,0 +1,18 @@
+Lists:
+ 
+ 
+1) How to create a list ?
+ 
+specifying the datatype of list while instantiating
+ 
+scala> val k = List[Any] ("hi",2,3,4,5.56)
+k: List[Any] = List(hi, 2, 3, 4, 5.56)
+ 
+without specifying the datatype while instantiating
+ 
+scala> val k = List("hi","hello")
+k: List[String] = List(hi, hello)
+ 
+another way to create a list is below
+ 
+val numbers = 10 :: 20 :: 30 :: 40 :: Nil
